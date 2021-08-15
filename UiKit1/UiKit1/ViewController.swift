@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var buttonStoryBoard: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //acess view and chenges its background color
@@ -19,6 +21,8 @@ class ViewController: UIViewController {
         let newView = UIView(frame: CGRect(x: 10, y: 10, width: 100, height: 100))
         let someView = UIButton(frame: CGRect(x: 10, y: 10, width: 60, height: 60))
         let newViewChild = UIView(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
+        let textField = UITextField(frame: CGRect(x: 30, y: 30, width: 120, height: 120))
+        let textLabel = UILabel(frame: CGRect(x: 30, y: 200, width: 120, height: 80))
         
         //Defines the center of newView as center of superView
         newView.center = CGPoint(x: self.view.frame.size.width/2, y: view.frame.size.height/2)
@@ -52,6 +56,14 @@ class ViewController: UIViewController {
         self.view.addSubview(newView)
         view.addSubview(someView)
         newView.addSubview(newViewChild)
+        
+        
+        textField.text = "testing"
+        textLabel.text = "testing label"
+        textLabel.backgroundColor = .white
+        textLabel.textAlignment = .center
+        self.view.addSubview(textField)
+        self.view.addSubview(textLabel)
     }
 }
 
