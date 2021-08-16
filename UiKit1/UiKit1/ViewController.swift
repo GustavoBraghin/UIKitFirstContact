@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         
         // Add rounded corners to UIView
         newView.layer.cornerRadius = 30
-        buttonStoryBoard.layer.cornerRadius = 50
+        buttonStoryBoard.layer.cornerRadius = 30
         
         // Add border to UIView
         newView.layer.borderWidth = 5
