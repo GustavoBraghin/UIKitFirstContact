@@ -21,13 +21,14 @@ class ViewController: UIViewController {
         let newView = UIView(frame: CGRect(x: 10, y: 10, width: 100, height: 100))
         let someView = UIButton(frame: CGRect(x: 10, y: 10, width: 60, height: 60))
         let newViewChild = UIView(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
-        let textField = UITextField(frame: CGRect(x: 30, y: 30, width: 120, height: 120))
-        let textLabel = UILabel(frame: CGRect(x: 30, y: 200, width: 120, height: 80))
+        let textField = UITextField(frame: CGRect(x: self.view.frame.size.width*0.8, y: 30, width: 120, height: 120))
+        let textLabel = UILabel(frame: CGRect(x: self.view.frame.size.width*0.4, y: view.frame.height*0.20, width: 120, height: 80))
         
         //Defines the center of newView as center of superView
         newView.center = CGPoint(x: self.view.frame.size.width/2, y: view.frame.size.height/2)
         someView.center = CGPoint(x: view.frame.width/2, y: view.frame.height*0.85)
         newViewChild.center = CGPoint(x: newView.frame.width/2, y: newView.frame.height/2)
+        textLabel.center = CGPoint(x: view.frame.size.width/2, y: view.frame.size.height*0.3)
         
         //defines background color of newView
         newView.backgroundColor = .cyan
@@ -36,6 +37,7 @@ class ViewController: UIViewController {
         
         // Add rounded corners to UIView
         newView.layer.cornerRadius = 30
+        buttonStoryBoard.layer.cornerRadius = 50
         
         // Add border to UIView
         newView.layer.borderWidth = 5
