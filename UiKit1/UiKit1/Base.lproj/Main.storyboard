@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBc-Pq-lwm">
-                                <rect key="frame" x="20" y="44" width="99" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBc-Pq-lwm">
+                                <rect key="frame" x="20" y="44" width="96" height="65"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                 <state key="normal" title="Return Button">
@@ -27,9 +26,28 @@
                                     <color key="titleShadowColor" name="AccentColor"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8X-Ty-HuK">
+                                <rect key="frame" x="312" y="824" width="82" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                <state key="normal" title="Next Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M8X-Ty-HuK" secondAttribute="bottom" constant="8" id="6V8-i6-SWK"/>
+                            <constraint firstItem="ZBc-Pq-lwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N9l-Yp-p3A"/>
+                            <constraint firstItem="M8X-Ty-HuK" firstAttribute="height" secondItem="ZBc-Pq-lwm" secondAttribute="height" multiplier="0.461538" id="SFQ-Cl-nT6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZBc-Pq-lwm" secondAttribute="trailing" constant="298" id="SOR-5L-6Uf"/>
+                            <constraint firstItem="ZBc-Pq-lwm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bsM-qZ-53U"/>
+                            <constraint firstItem="ZBc-Pq-lwm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eah-Vy-hM3"/>
+                            <constraint firstItem="M8X-Ty-HuK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="295" id="g5M-Ov-Nhj"/>
+                            <constraint firstItem="M8X-Ty-HuK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hFZ-6T-Vjk"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonStoryBoard" destination="ZBc-Pq-lwm" id="14C-Ko-5Ic"/>
@@ -49,6 +67,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
