@@ -51,6 +51,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonStoryBoard" destination="ZBc-Pq-lwm" id="14C-Ko-5Ic"/>
+                        <outlet property="nextButton" destination="M8X-Ty-HuK" id="MtQ-Bh-zcd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
